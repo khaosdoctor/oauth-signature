@@ -6,15 +6,25 @@ export interface BaseStringSegments {
 	parameters: Record<string, string>
 }
 
-function generateParameterString(parameters: BaseStringSegments['parameters']) {
+async function generateParameterString(parameters: BaseStringSegments['parameters']) {
 	const keys = Object.keys(parameters).sort()
-	const pairs = keys.map((key) => {
-		return `${percentEncode(key)}=${percentEncode(parameters[key])}`
-	})
+	const pairs = await Promise.all(keys.map(async (key) => {
+		const encoded = `${await percentEncode(key)}=${await percentEncode(parameters[key])}`
+		return encoded
+	}))
 	return pairs.join('&')
 }
 
-export function generateBaseString(segments: BaseStringSegments) {
-	const parameterString = generateParameterString(segments.parameters)
-	return `${segments.method.toUpperCase()}&${percentEncode(segments.url)}&${percentEncode(parameterString)}`
+function assertValidUrl(url: string) {
+	try {
+		new URL(url)
+	} catch (error) {
+		throw error
+	}
+}
+
+export async function generateBaseString(segments: BaseStringSegments) {
+	assertValidUrl(segments.url)
+	const parameterString = await generateParameterString(segments.parameters)
+	return `${segments.method.toUpperCase()}&${await percentEncode(segments.url)}&${await percentEncode(parameterString)}`
 }
