@@ -1,2 +1,3 @@
-# oauth-basestring
-OAuth1.0 base string generation
+# OAuth signature
+
+> OAuth 1.0a signature generator for Deno

@@ -1,0 +1,13 @@
+{
+  "fmt": {
+    "indentWidth": 2,
+    "useTabs": true,
+    "lineWidth": 120,
+    "semiColons": false,
+    "singleQuote": true,
+    "include": ["**/*.ts"]
+  },
+  "tasks": {
+    "deps:reload": "deno cache --reload mod.ts"
+  }
+}

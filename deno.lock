@@ -1,0 +1,8 @@
+{
+  "version": "3",
+  "redirects": {
+    "https://deno.land/std/crypto/crypto.ts": "https://deno.land/std@0.208.0/crypto/crypto.ts",
+    "https://deno.land/x/percentencode/mod.ts": "https://deno.land/x/percentencode@v1.0.2/mod.ts"
+  },
+  "remote": {}
+}
