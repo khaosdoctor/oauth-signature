@@ -45,6 +45,9 @@
     "https://deno.land/std@0.208.0/crypto/_wasm/lib/deno_std_wasm_crypto.generated.mjs": "c41c4676a3ea2a92e8fdff55434533474131e4dfac2262a6a6c81631069808d8",
     "https://deno.land/std@0.208.0/crypto/_wasm/mod.ts": "d7b7dc54bbd6b02c16cd08e8e3d30fa9aa9692efb112a7ab5d8595827b9a0234",
     "https://deno.land/std@0.208.0/crypto/crypto.ts": "91c67764abb640b3e2a0b46867704d02077c0b1f978f5c711e4408e5d856717d",
+    "https://deno.land/std@0.208.0/encoding/_util.ts": "f368920189c4fe6592ab2e93bd7ded8f3065b84f95cd3e036a4a10a75649dcba",
+    "https://deno.land/std@0.208.0/encoding/base64.ts": "81c0ecff5ccb402def58ca03d8bd245bd01da15a077d3362b568e991aa10f4d9",
+    "https://deno.land/std@0.208.0/encoding/hex.ts": "a384101d02cd87036c708f540825feb5b073c8527a00d635e48b2e69c992a5f9",
     "https://deno.land/std@0.208.0/fmt/colors.ts": "34b3f77432925eb72cf0bfb351616949746768620b8e5ead66da532f93d10ba2",
     "https://deno.land/x/percentencode@v1.0.2/mod.ts": "bd3d831c0369d0ea7683d8db83851b24bab9eeaf30478b65922132fb11d70539"
   }
